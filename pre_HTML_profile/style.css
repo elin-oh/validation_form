@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+}
+
+.blackBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#greeting {
+  background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#greeting>.blackBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#greeting .btn_scroll_down {
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#greeting .btn_scroll_down:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  margin-top: 10px;
+}
+
+#intro {
+  color: black;
+}
+
+
+
+.wrapText {
+  max-width: 890px;
+}
+
+.wrapText h2 {
+  font-size: 2rem;
+}
+
+.wrapText p {
+  font-size: 1rem;
+}
+
+#whyUse {
+  background: black;
+}
