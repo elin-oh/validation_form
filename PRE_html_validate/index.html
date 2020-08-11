@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <h2>회원가입</h2>
+    <form action="" id="joinForm">
+      <ul>
+        <li>
+          <input type="text" name="userId" class="userId" placeholder="ID" id="userId" maxlength="20">
+        </li>
+        <li id="result_validate_id" class="result_validate"></li>
+        <li>
+          <input type="password" maxlength="16" placeholder="PASSWORD" id="userPwd">
+        </li>
+        <li id="result_validate_pwd" class="result_validate"></li>
+        <li>
+          <p style="margin-bottom:5px;">성별</p>
+          <input type="radio" name="gender" class="genderType" id="genderFemale" checked>
+          <label for="genderFemale" class="">여성</label>
+          <input type="radio" name="gender" class="genderType" id="genderMale">
+          <label for="genderMale" class="">남성</label>
+        </li>
+        <li id="checkboxLists">
+          <p style="margin-bottom:5px;">사이트 접속 경로</p>
+
+          <label for="sns" class="">
+            <input type="checkbox" id="sns" checked name="checkLists">
+            SNS
+          </label>
+          <label for="recommend" class="">
+            <input type="checkbox" id="recommend" name="checkLists">
+            지인추천
+          </label>
+          <label for="search" class="">
+            <input type="checkbox" id="search" name="checkLists">
+            검색
+          </label>
+        </li>
+        <li id="result_validate_check" class="result_validate"></li>
+      </ul>
+
+
+
+      <button type="submit" id="btnSubmit">SUBMIT</button>
+    </form>
+  </div>
+  <script src="common.js"></script>
+</body>
+
+</html>
